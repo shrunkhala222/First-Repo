@@ -1,0 +1,14 @@
+@TC001
+Feature: User Registration
+
+  Scenario: Verify user Registration functionality
+    Given user opens Registration account page
+    When User enter below details
+      | firstname    | Allu                |
+      | Lastname     | Arjun               |
+      | emailaddress | alluarjun@gmail.com |
+      | telephone    |           123456789 |
+      | password     | Allu@12345          |
+      | cnfpassword  | Allu@12345          |
+    And Select privacy policy field and click on continue button
+    Then account should get successfully generated

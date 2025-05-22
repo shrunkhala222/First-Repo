@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Explicitwait {
@@ -26,7 +27,7 @@ Normalalert.click();
      wait.until(ExpectedConditions.alertIsPresent());
      driver.switchTo().alert().accept();
      
-     String Text = driver.findElement(By.xpath("p[text()='You successfully clicked an alert']")).getText();
+     String Text = driver.findElement(By.xpath("//p[text()='You successfully clicked an alert']")).getText();
      if (Text.equals("You successfully clicked an alert"))
     		 {
     	      System.out.println("Test is pass");

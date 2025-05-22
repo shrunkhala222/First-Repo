@@ -19,7 +19,7 @@ public void user_is_on_login_page() {
     driver = new ChromeDriver();
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     driver.manage().window().maximize();
-    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     
 }
 
@@ -38,10 +38,10 @@ public void user_is_navigated_to_home_page() {
 	System.out.println("Navigated to Home Page");
 }
 
-@And("close the browser")
-public void close_the_browser() {
-	System.out.println("Browser Closed");
-}
+//@And("close the browser")
+//public void close_the_browser() {
+//	System.out.println("Browser Closed");
+//}
 
 
 }
